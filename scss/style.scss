@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@400;500&display=swap');
+@charset "UTF-8";
+
+
+// 이 파일만 열면은 내 가파일을 어떻게 구성해서 어떻게 css를 만들었는지 확인
+
+// css 파일 분화  // 대표적으로 이정도가 국룰 느낌
+@import "var.scss"; // 변수 겁나 담을 파일
+@import "mixin.scss"; // 공통 mixin 이 되는데 정확히 mixin 이란?
+@import "initial.scss"; // 초기화 값을 담을꺼
+@import "common.scss"; //페이지별 공통 요소
+@import "component.scss"; //공통 컴포넌트
+@import "layout.scss"; // 바깥쪽 영역 공통 레이아웃
+
+
+// 페이지를 분화
+@import "main.scss";
+@import "subpage.scss";
+// 각페이지 별 구성이 용이하다

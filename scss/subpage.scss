@@ -1,0 +1,70 @@
+body.subpage{
+  main{
+    .container{
+      display: flex;
+      // 왼쪽메뉴
+      #lnb{
+        flex: 230px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        box-sizing: border-box;
+        padding-right: 50px;
+        ul{
+          li{
+            border-bottom: 1px solid $borderColorPrimary;
+          }
+          a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            line-height: 50px;
+            font-size: $fontSizeMid;
+            transition: 0.5s;
+            &:hover{
+              padding-left: 20px;
+            }
+            &.on{
+              color: white;
+              background: $gbtnColor;
+              padding-left: 20px;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+      .sub-title{
+        & + .inner{
+          .tdl-header{
+            margin-top: 50px;
+          }
+        }
+        span{
+          position: relative;
+          display: inline-block;
+          padding-bottom: 8px;
+          line-height: 43px;
+          &:after{
+            display: flex;
+            position: absolute;
+            content: '';
+            height: 3px;
+            width: 100%;
+
+            background-color: $borderColorPrimary;
+          }
+
+        }
+      }
+      .inner{
+        .box{
+          flex-wrap: wrap;
+        }
+        & + .inner{
+          padding-top: 50px;
+          margin-top: 50px;
+          border-top: 1px solid $borderColorPrimary;
+        }
+      }
+    }
+  }
+}
