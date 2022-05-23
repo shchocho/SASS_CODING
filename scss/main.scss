@@ -2,7 +2,11 @@
   height: 550px;
   background:url(../img/main_banner_cs.jpg);
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
+  &.sub{
+    background:url(../img/main/item12.jpg);
+  }
+
 }
 
 .inner{
@@ -17,6 +21,12 @@
         }
       }
 
+    }
+    &.img-wrap{
+      .items{
+        flex: 20%;
+      
+      }
     }
   }
 }
